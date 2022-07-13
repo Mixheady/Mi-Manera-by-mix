@@ -1,0 +1,375 @@
+@font-face {
+     font-family: 'AkzidenzGrotesk Bold';
+     src: url(/FONTS/AkzidenzGrotesk-Bold.otf);
+}
+@font-face {
+     font-family: 'AkzidenzGrotesk Cond';
+     src: url(/FONTS/AkzidenzGrotesk-Cond.otf);
+}
+@font-face {
+     font-family: 'AkzidenzGrotesk Regular';
+     src: url(/FONTS/AkzidenzGrotesk-Regular.otf);
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style-type: none;
+     text-decoration: none;
+     
+}
+header{
+     width: 100%;
+     position: fixed;
+     z-index: 1;
+     
+}
+.logo_img{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.logo{
+     position: absolute;
+     text-align: center;
+     top:70px;
+}
+.container{
+     margin-left: 10%;
+     margin-right: 10%;
+}
+.nav_container{
+     width: 100%;
+     height: 60px;
+     background-color: white;
+     position: fixed;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.nav_list{
+     display: flex;
+     flex-direction: row;
+}
+
+.nav_item{
+     margin: 42px;
+     transition: 0.3s;
+}
+.nav_item:hover{
+     transform-origin: center;
+     transform: scale(2);
+}
+.nav_hidden{
+     position: absolute;
+     background-color: rgba(0, 0, 0 ,1);
+     display: flex;
+     justify-content: center;
+     width: 100vw;
+     height: 100vh;
+     top: 0;
+     left: 0;
+}
+.nav_hidden.hidden{
+     display: none;
+}
+
+.nav_item-hidden{
+     margin: 25px;
+     transition: 0.3s;
+}
+.nav_list-hidden h3{
+     margin: 20px;
+     font-size: 24px;
+     color: #666666;
+     font-family: 'AkzidenzGrotesk Bold';
+}
+.nav_item-hidden a{
+     font-size: 18px;
+     color:#fff;
+     font-family: 'AkzidenzGrotesk Regular';
+}
+.nav_item-hidden:hover{
+     transform: translate(15px,10px) scale(1.1);
+}
+
+
+a{
+     font-size: 18px;
+     color: black;
+     font-family: 'AkzidenzGrotesk Regular';
+}
+.signin{
+     display: flex;
+}
+.signin_item{
+     margin: 20px 20px;
+}
+.dropbtn {
+     background-color: white;
+     color: black;
+     font-size: 20px;
+     padding: 16px;
+     border: none;
+     cursor: pointer;
+}
+.dropdown {
+     margin-left: 53px;
+     position: relative;
+     display: inline-block;
+}
+.dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: white;
+     z-index: 11;
+}
+.dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     z-index: 10;
+}
+.dropbtn:hover{
+     color: gray;
+}
+.dropdown-content a:hover {
+     background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+     display: block;
+}
+.logo_img{
+     width: 100%;
+}
+.logo_img img{
+     width: 100%;
+     padding-left: 50px;
+     padding-right: 50px;
+     padding-top: 30px;
+     z-index: -1;
+}
+
+.img_bg{
+     width: 100%;
+}
+
+video{
+     object-fit: cover;
+     position: absolute;
+     top:0;
+     left: 0;
+     opacity: 0;
+     width: 100%;
+     transition: 0.75s;
+}
+video:hover{
+     opacity: 1;
+}
+.img_bg img{
+     width: 100%;
+}
+.container{
+     margin-left: 10%;
+     margin-right: 10%;
+     overflow: hidden;
+}
+.sec_content{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin-top: 150px;
+}
+.img_bg1{
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.img_bg1 img{
+     width: 750px;
+     height: 750px;
+     text-align: center;
+}
+.title{
+     position: absolute;
+     font-size: 100px;
+     color: #fff;
+     font-family: 'AkzidenzGrotesk Bold';
+     transition: 1s;
+}
+
+.title.transform{
+     transform: translateY(250%);
+}
+.text_container{
+     width: 750px;
+     text-align: center;
+     font-family: 'AkzidenzGrotesk Regular';
+     margin: auto;
+}
+.text_title{
+     font-size: 24px;
+     padding: 10px;
+     margin: 10px;
+}
+.text_content{
+     font-size: 16px;
+     padding: 10px;
+     margin: 10px;
+}
+.img_bg2{
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+.img_bg2 img{
+     width: 100%;
+     text-align: center;
+}
+
+.bg_collection-grid-item{
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.sec3{
+     margin:auto;
+}
+
+.grid{
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2,500px);
+     grid-template-rows: repeat(2,500px);
+     grid-gap: 100px;
+     
+}
+.bg_collection-grid-item:nth-child(1){
+     grid-column: 1 / 3;
+     grid-row: 1 / 2;
+}
+.bg_collection-grid-item{
+     position: relative;
+     overflow: hidden;
+}
+
+.bg_collection-grid-item img{
+     width: 100%;
+}
+.title_collection{
+     position: absolute;
+     font-size: 50px;
+     color: #fff;
+     font-family: 'AkzidenzGrotesk Bold';
+}
+
+.footer_container{
+     margin-left: 5%;
+     margin-right: 5%;
+     margin-top: 100px;
+}
+.footer_grid{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap:50px;
+}
+
+.footer_grid-itme h3{
+     font-size: 20px;
+     padding: 20px;
+     font-family: 'AkzidenzGrotesk Regular';
+     color: #000;
+     letter-spacing: 2px;
+     font-weight: 100;
+}
+
+.footer_grid-itme p{
+     font-size: 16px;
+     font-weight: 100;
+     padding: 20px;
+     font-family: 'AkzidenzGrotesk Regular';
+     color: #666666;
+}
+.box_text {
+     width: 280px;
+}
+.footer_grid-itme ul li{
+     font-size: 16px;
+     font-family: 'AkzidenzGrotesk Regular';
+     color: #666666;
+}
+.footer_contect-container{
+     background-color: #f8f9f8;
+}
+
+.footer_contect-grid{
+     display: grid;
+     grid-template-columns: repeat(6,1fr);
+     margin-left: 5%;
+     margin-right: 5%;
+     font-family: 'AkzidenzGrotesk Regular';
+     
+
+}
+.footer_contect-grid-item:nth-child(5){
+     grid-column: 5 / 7;
+}
+.footer_contect-grid-item h3{
+     color: black;
+     font-size: 24px;
+     font-weight: 100;
+     padding: 25px;
+}
+.footer_contect-grid-item p{
+     padding: 15px;
+}
+.footer_contect-grid-item p a{
+     color: #666666;
+     font-size: 16px;
+     font-weight: 100;
+}
+.form {
+     padding: 10px;
+     width: 550px;
+     display: flex;
+}
+.form input{
+     width: 400px;
+     height: 40px;
+     margin: 10px;
+     border: 0;
+     border-bottom: 1px solid;
+     color: #666666;
+     background-color: #f8f9f8;
+}
+.form .sub-btn{
+     width: 400px;
+     height: 40px;
+     margin: 10px;
+     border: 0;
+     background-color:#e0e0e0;
+     cursor: pointer;
+}
+
+.foorter_edit{
+     margin-top: 5%;
+     margin-left: 5%;
+     margin-right: 5%;
+     display: flex;
+     justify-content: space-between;
+}
+.foorter_edit h3{
+     color: #666666;
+     font-size: 16px;
+     font-weight: 100;
+     padding: 25px;
+     font-family: 'AkzidenzGrotesk Regular';
+}
